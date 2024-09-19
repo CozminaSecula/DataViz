@@ -57,9 +57,6 @@ dii_eu_countries <- dii_eu_countries |>
     indicator_code = fct_rev(indicator_code)  # Reverse factor levels
   )
 
-# Define text -------------------------------------------------------------
-
-title <- "EU's Digital Intensity Index (DII) in 2023"
 
 # Plot --------------------------------------------------------------------
 
