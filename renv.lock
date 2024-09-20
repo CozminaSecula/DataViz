@@ -277,6 +277,24 @@
       ],
       "Hash": "d7e13f49c19103ece9e58ad2d83a7354"
     },
+    "camcorder": {
+      "Package": "camcorder",
+      "Version": "0.1.0",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "ggplot2",
+        "gifski",
+        "grDevices",
+        "jsonlite",
+        "magick",
+        "rlang",
+        "rsvg",
+        "svglite",
+        "tools"
+      ],
+      "Hash": "76de13290e903184fd6a9ac2860250c2"
+    },
     "cellranger": {
       "Package": "cellranger",
       "Version": "1.1.0",
@@ -726,6 +744,13 @@
       ],
       "Hash": "c5ba8f5056487403a299b91984be86ca"
     },
+    "gifski": {
+      "Package": "gifski",
+      "Version": "1.12.0-2",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Hash": "94ea43ec9e47684c20810e9272605425"
+    },
     "giscoR": {
       "Package": "giscoR",
       "Version": "0.6.0",
@@ -1112,6 +1137,18 @@
         "timechange"
       ],
       "Hash": "680ad542fbcf801442c83a6ac5a2126c"
+    },
+    "magick": {
+      "Package": "magick",
+      "Version": "2.8.4",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "Rcpp",
+        "curl",
+        "magrittr"
+      ],
+      "Hash": "63adf42f6fa0fca09999a328e1ae8204"
     },
     "magrittr": {
       "Package": "magrittr",
@@ -1541,6 +1578,13 @@
       "Repository": "CRAN",
       "Hash": "5564500e25cffad9e22244ced1379887"
     },
+    "rsvg": {
+      "Package": "rsvg",
+      "Version": "2.6.0",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Hash": "7aaf92c4adddc8a85696ae7f0123a725"
+    },
     "rvest": {
       "Package": "rvest",
       "Version": "1.0.4",
@@ -1683,6 +1727,18 @@
         "vctrs"
       ],
       "Hash": "960e2ae9e09656611e0b8214ad543207"
+    },
+    "svglite": {
+      "Package": "svglite",
+      "Version": "2.1.3",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "cpp11",
+        "systemfonts"
+      ],
+      "Hash": "124a41fdfa23e8691cb744c762f10516"
     },
     "sys": {
       "Package": "sys",
