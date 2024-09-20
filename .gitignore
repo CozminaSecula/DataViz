@@ -3,5 +3,6 @@
 .RData
 .Ruserdata
 
-/make_template.R/
+/make_template.R
 /utils/
+**/recording/
