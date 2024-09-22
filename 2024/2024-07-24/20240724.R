@@ -2,7 +2,6 @@
 # Load packages -----------------------------------------------------------
 
 library(tidyverse)
-library(camcorder)
 library(ggtext)
 library(scales)
 
@@ -48,18 +47,6 @@ max_min_value <- data_cleaned |>
   mutate(Rank_value = factor(Rank_value, levels = c("Highest", "Lowest"))) |>
   arrange(desc(Value)) |>
   mutate(Indicator_code = factor(Indicator_code, levels = rev(unique(Indicator_code))))
-
-
-# Start recording ---------------------------------------------------------
-
-gg_record(
-  dir = file.path("2024", "2024-07-24", "recording"),
-  device = "png",
-  width = 9.7,
-  height = 11.7,
-  units = "in",
-  dpi = 300
-)
 
 
 # Define text -------------------------------------------------------------
@@ -141,7 +128,7 @@ ggplot(max_min_value, aes(x = Indicator_code,
   )
 
 
-# Save gif ----------------------------------------------------------------
+# Save png ----------------------------------------------------------------
 
 ggsave(
   file.path("2024", "2024-07-24", paste0("20240724", ".png")),
@@ -150,10 +137,3 @@ ggsave(
   dpi = 300)
 
 
-gg_playback(
-  name = file.path("2024", "2024-07-24", paste0("20240724", ".gif")),
-  first_image_duration = 4,
-  last_image_duration = 20,
-  frame_duration = .25,
-  bg = "white"
-)
