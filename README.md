@@ -16,7 +16,7 @@ This repository serves as a portfolio of my personal projects, demonstrating my 
 
 With a strong focus on transforming data into actionable insights, I enjoy working with diverse data sets and creating clear, informative visualizations. 
 
-Please [email me](cozmina.secula@gmail.com) if you're interested in hiring me or collaborating with me on a project.
+If you're interested in hiring me or collaborating with me on a project, please [email me](mailto:cozmina.secula@gmail.com).
 
 
 
