@@ -16,11 +16,9 @@ execute:
   freeze: auto
 params:
   title: "EU Digital Skills Indicator: 2023 compared to 2021"
-
 ---
 
 # `r params$title`
-
 
 ------------------------------------------------------------------------
 
@@ -29,9 +27,9 @@ params:
 1.  Install and load packages
 2.  Load data
 3.  Data wrangling
-4.  Data visualization 
+4.  Data visualization
 5.  Final visualization
-6.  Summary
+6.  Packages used in the project
 
 ------------------------------------------------------------------------
 
@@ -88,7 +86,7 @@ table_options <- function(scrollY, title, csv) {
 }
 ```
 
-## Load data 
+## Load data
 
 <br>
 
@@ -101,8 +99,7 @@ data_path <- "20240830.csv"
 
 ```
 
-<br>
-**Load data**
+<br> **Load data**
 
 ```{r}
 #| label: load-data
@@ -119,7 +116,6 @@ if (file.exists(data_path)) {
 ## Clean and transform the data {.small}
 
 <br>
-
 
 ```{r}
 #| label: clean-transform-data
@@ -166,7 +162,6 @@ country_codes <- data.frame(
 
 <br>
 
-
 ```{r}
 #| label: prepare-data-for-viz
 
@@ -189,7 +184,6 @@ dsi <- digital_skills_summary |>
 ## Preview the data {.small}
 
 <br>
-
 
 ```{r}
 #| label: preview-data
@@ -215,11 +209,11 @@ datatable(
 # Data Visualization
 
 ## Base Plot {.smaller}
+
 <br>
 
-:::: {.flex-container}
-::: {.flex-column-50}
-
+::: flex-container
+::: flex-column-50
 ```{r}
 #| label: base-plot
 #| output: false
@@ -241,7 +235,7 @@ dsi |>
 ```
 :::
 
-::: {.flex-column-50}
+::: flex-column-50
 ```{r}
 #| label: base-plot-fig
 #| echo: false
@@ -260,21 +254,18 @@ dsi |>
                 colour_x = "#33645FFF",
                 alpha = 0.7,
                 dot_guide = TRUE,
-                dot_guide_size = 0.15) +
-  scale_x_continuous(labels = scales::percent_format(scale = 1),
-                     limits = c(0, 100),
-                     breaks = seq(0, 100, by = 20))
+                dot_guide_size = 0.15) 
 
 ```
 :::
 :::
 
-## Adding Custom X and Y Axis Labels {.smaller}
+## Adding Custom X Axis Labels {.smaller}
+
 <br>
 
-:::: {.flex-container}
-::: {.flex-column-50}
-
+::: flex-container
+::: flex-column-50
 ```{r}
 #| label: custom-x-y-labels
 #| output: false
@@ -299,8 +290,7 @@ dsi |>
 ```
 :::
 
-::: {.flex-column-50}
-
+::: flex-column-50
 ```{r}
 #| label: custom-x-y-labels-fig
 #| echo: false
@@ -329,11 +319,11 @@ dsi |>
 :::
 
 ## Adding Title, Subtitle and Caption {.smaller}
+
 <br>
 
-:::: {.flex-container}
-::: {.flex-column-50}
-
+::: flex-container
+::: flex-column-50
 ```{r}
 #| label: add-title-st-cap
 #| output: false
@@ -366,9 +356,9 @@ dsi |>
   )
   
 ```
-
 :::
-::: {.flex-column-50}
+
+::: flex-column-50
 ```{r}
 #| label: add-title-st-cap-fig
 #| fig-width: 9.7
@@ -407,11 +397,11 @@ dsi |>
 :::
 
 ## Adding Custom Theme {.smaller}
+
 <br>
 
-:::: {.flex-container}
-::: {.flex-column-50 }
-
+::: flex-container
+::: flex-column-50
 ```{r}
 #| label: add-custom-theme
 #| output: false
@@ -474,8 +464,7 @@ dsi |>
 ```
 :::
 
-::: {.flex-column-50}
-
+::: flex-column-50
 ```{r}
 #| label: add-custom-theme-fig
 #| fig-width: 9.7
@@ -542,14 +531,12 @@ dsi |>
 :::
 :::
 
-## Adding Custom Fill and Textbox Labels {.smaller}
+## Adding Custom Text {.smaller}
 
 <br>
 
-
-:::: {.flex-container}
-::: {.flex-column-50}
-
+::: flex-container
+::: flex-column-50
 ```{r}
 #| label: custom-fill-textbox-lables
 #| output: false
@@ -641,9 +628,7 @@ dsi |>
 ```
 :::
 
-
-::: {.flex-column-50}
-
+::: flex-column-50
 ```{r}
 #| label: custom-fill-textbox-labels-fig
 #| fig-width: 9.7
@@ -738,9 +723,7 @@ dsi |>
 :::
 :::
 
-
 ## Final Visualization
-
 
 ```{r}
 #| label: final plot
@@ -832,3 +815,14 @@ dsi |>
 
 ```
 
+## Packaged used in this project  {.small}
+
+-   **`tidyverse`**: A collection of R packages designed for data science, making it easy to manipulate and visualize data. [Learn more](https://www.tidyverse.org/)
+
+-   **`ggalt`**: Extends `ggplot2` with additional geoms for enhanced data visualization, including dumbbell charts and lollipop charts. [Learn more](https://github.com/hrbrmstr/ggalt)
+
+-   **`ggtext`**: Provides tools for improved text rendering in `ggplot2` visuals, including markdown, HTML, and custom formatting. [Learn more](https://wilkelab.org/ggtext/index.html)
+
+-   **`glue`**: A package for combining strings and variables in R efficiently. [Learn more](https://glue.tidyverse.org/)
+
+-   **`DT`**: A package for creating interactive tables in R using the DataTables library, providing easy-to-use and flexible tables. [Learn more](https://rstudio.github.io/DT/)
