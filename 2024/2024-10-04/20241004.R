@@ -95,10 +95,9 @@ ggplot(df) +
     legend.position = "none",
     plot.title.position = "panel",
     plot.caption.position = "panel",
-    plot.caption = element_markdown(color = "#000000",
+    plot.caption = element_markdown(color = "grey50",
                                     size = 11,
-                                    hjust = 0,
-                                    family = "Lato")
+                                    family = "lato")
   ) +
   geom_text(data = labels_last_value,
             aes(x = last_date,
