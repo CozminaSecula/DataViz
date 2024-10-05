@@ -18,7 +18,7 @@ source("./2024/2024-10-04/theme_rdv.R")
 
 # Load data ---------------------------------------------------------------
 
-df <- readxl::read_excel("./2024/2024-10-04/20241004.xlsx")
+df <- readxl::read_xlsx("./2024/2024-10-04/20241004.xlsx")
 
 # Load fonts --------------------------------------------------------------
 
@@ -95,8 +95,8 @@ ggplot(df) +
     legend.position = "none",
     plot.title.position = "panel",
     plot.caption.position = "panel",
-    plot.caption = element_markdown(color = "grey50",
-                                    size = 11,
+    plot.caption = element_markdown(color = "#000000",
+                                    size = 10,
                                     family = "lato")
   ) +
   geom_text(data = labels_last_value,
