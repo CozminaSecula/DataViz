@@ -1,0 +1,323 @@
+---
+title: ""
+author: ""
+format: 
+  revealjs:
+    theme: "utils/theme.scss"
+    transition: fade
+    background-transition: fade
+    highlight-style: ayu-mirage
+    slide-number: true
+code-link: true
+execute:
+  echo: true
+  warning: false
+  message: false
+  freeze: auto
+params:
+  title: ""
+
+---
+
+# `r params$title`
+
+
+------------------------------------------------------------------------
+
+## Outline
+
+1.  Install and load packages
+2.  Load data
+3.  Data wrangling
+4.  Data visualization 
+5.  Final visualization
+6.  Summary
+
+------------------------------------------------------------------------
+
+## Install and Load Packages
+
+<br>
+
+```{r}
+#| label: load-packages
+
+packages <- c("tidyverse", "ggtext", "scales", "DT")
+installed <- packages %in% rownames(installed.packages())
+
+if (any(!installed)) {
+  install.packages(packages[!installed])
+}
+
+library(tidyverse)
+library(ggtext)
+library(scales)
+library(DT)
+
+```
+
+```{r}
+#| label: DT options
+#| include: false
+
+toggle_select <- DT::JS(
+  "table.on('click.dt', 'tbody tr', function() {",
+  "$(this).toggleClass('selected');",
+  "})"
+)
+table_options <- function(scrollY, title, csv) {
+  list(
+    dom = "Bft",
+    pageLength = -1,
+    searching = TRUE,
+    scrollX = TRUE,
+    scrollY = scrollY,
+    buttons = list(
+      list(
+        extend = "copy",
+        filename = title
+      ),
+      list(
+        extend = "csv",
+        filename = csv
+      )
+    )
+  )
+}
+```
+
+## Load data 
+
+<br>
+
+**Define paths**
+
+```{r}
+#| label: define-paths
+#| 
+data_path <- "./"2024"/"2024-09-04"/"20240904".csv"
+
+```
+
+<br>
+**Load data**
+
+```{r}
+#| label: load-data
+
+if (file.exists(data_path)) {
+  df <- read.csv(data_path)
+} else {
+  stop("Data file is not available.")
+}
+```
+
+# Data wrangling {.small}
+
+## Clean and transform the data {.small}
+
+<br>
+
+
+```{r}
+#| label: clean-transform-data
+
+Placeholder 
+
+```
+
+## Prepare data for visualization {.small}
+
+<br>
+
+
+```{r}
+#| label: prepare-data-for-viz
+
+Placeholder
+
+```
+
+## Preview the data {.small}
+
+<br>
+
+
+```{r}
+#| label: preview-data
+#| echo: false
+#| eval: true
+
+datatable(
+  placehoder, 
+  rownames = FALSE,
+  escape = FALSE,
+  width = "800px",
+  options = table_options(
+    scrollY = "400px",  
+    title = "Cleaned Data",  
+    csv = "cleaned_data"  
+  ),
+  callback = toggle_select,
+  class = "compact"
+) 
+
+```
+
+# Data Visualization
+
+## Base Plot {.smaller}
+<br>
+
+```{r}
+#| label: base-plot
+
+Placeholder
+
+```
+
+## Adding Custom X and Y Axis Labels {.smaller}
+<br>
+
+```{r}
+#| label: custom-x-y-labels
+
+Placeholder
+
+```
+
+## Adding Custom Fill and Textbox Labels {.smaller}
+
+<br>
+
+
+:::: {.flex-container}
+::: {.flex-column-50}
+
+```{r}
+#| label: custom-fill-textbox-lables
+#| output: false
+
+Placeholder
+
+```
+:::
+
+
+::: {.flex-column-50}
+
+```{r}
+#| label: custom-fill-textbox-labels-fig
+#| fig-width: 9.7
+#| fig-height: 11.7
+#| echo: false
+
+Placeholder
+
+```
+:::
+:::
+
+## Adding Title, Subtitle and Caption {.smaller}
+<br>
+
+:::: {.flex-container}
+::: {.flex-column-50}
+
+```{r}
+#| label: add-title-st-cap
+#| output: false
+
+title <- ""
+subtitle <- paste0("")
+caption <- "Graph: @ \nData: ."
+
+Placeholder
+  
+```
+
+:::
+::: {.flex-column-50}
+```{r}
+#| label: add-title-st-cap-fig
+#| fig-width: 9.7
+#| fig-height: 11.7
+#| echo: false
+
+title <- ""
+subtitle <- paste0("")
+caption <- "Graph: @ \nData: ."
+
+Placeholder
+
+```
+:::
+:::
+
+## Adding Custom Theme {.smaller}
+<br>
+
+:::: {.flex-container}
+::: {.flex-column-50 }
+
+```{r}
+#| label: add-custom-theme
+#| output: false
+ 
+title <- ""
+subtitle <- paste0("")
+caption <- "Graph: @ \nData: ."
+
+Placeholder
+
+```
+:::
+
+::: {.flex-column-50}
+
+```{r}
+#| label: add-custom-theme-fig
+#| fig-width: 9.7
+#| fig-height: 11.7
+#| echo: false
+#| fig-align: right
+
+title <- ""
+subtitle <- paste0("")
+caption <- "Graph: @ \nData: ."
+
+Placeholder
+
+```
+:::
+:::
+
+## Final Visualization
+
+
+```{r}
+#| label: final plot
+#| echo: false
+#| fig-width: 9.7
+#| fig-height: 11.7
+#| fig-align: center
+
+title <- ""
+subtitle <- paste0("")
+caption <- "Graph: @ \nData: ."
+
+Placeholder
+
+```
+
+## Packaged used in this project  {.small}
+
+-   **`tidyverse`**: A collection of R packages designed for data science, making it easy to manipulate and visualize data. [Learn more](https://www.tidyverse.org/)
+
+-   **`ggalt`**: Extends `ggplot2` with additional geoms for enhanced data visualization, including dumbbell charts and lollipop charts. [Learn more](https://github.com/hrbrmstr/ggalt)
+
+-   **`ggtext`**: Provides tools for improved text rendering in `ggplot2` visuals, including markdown, HTML, and custom formatting. [Learn more](https://wilkelab.org/ggtext/index.html)
+
+-   **`glue`**: A package for combining strings and variables in R efficiently. [Learn more](https://glue.tidyverse.org/)
+
+-   **`DT`**: A package for creating interactive tables in R using the DataTables library, providing easy-to-use and flexible tables. [Learn more](https://rstudio.github.io/DT/)
