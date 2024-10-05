@@ -22,15 +22,45 @@ If you're interested in hiring me or collaborating with me on a project, please 
 
 [EU's Digital Intensity Index (DII) in 2023](https://github.com/CozminaSecula/dataviz/tree/main/2024/2024-07-16)
 
-<h1 align="left"> EU's Digital Intensity Index (DII) in 2023 </h1>
-
 <p align="left">
   <img src="/2024/2024-07-16/20240716.png" width="60%">
 </p>
 
+[EU Digital Skills Indicator: 2023 compared to 2021](https://github.com/CozminaSecula/dataviz/tree/main/2024/2024-08-30)
+
+<p align="left">
+  <a href="https://cozminasecula.github.io/dataviz/2024/2024-08-30/20240830.html" target="_blank">View the tutorial presentation</a>
+</p>
 
 
+<h1 align="left"> EU Digital Skills Indicator: 2023 compared to 2021</h1>
+
+<p align="left">
+  <img src="/2024/2024-08-30/20240830.png" width="60%">
+</p>
+
+[Child Mortality Rate Over Time](https://github.com/CozminaSecula/dataviz/tree/main/2024/2024-09-10)
+
+<p align="left">
+  <a href="https://cozmina-secula.shinyapps.io/child-mortality-rate/" target="_blank">View Interactive Chart</a>
+</p>
 
 
+<p align="left">
+  <img src="/2024/2024-09-10/20240910.png" width="60%">
+</p>
 
+
+[How Many Hours do Europeans Work Each Week?](https://github.com/CozminaSecula/dataviz/tree/main/2024/2024-09-16)
+
+<p align="left">
+  <img src="/2024/2024-09-16/20240916.png" width="60%">
+</p>
+
+
+[EU Enterprises and Data Analytics in 2023](https://github.com/CozminaSecula/dataviz/tree/main/2024/2024-09-26)
+
+<p align="left">
+  <img src="/2024/2024-09-26/20240926.png" width="60%">
+</p>
 
