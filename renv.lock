@@ -120,6 +120,20 @@
       ],
       "Hash": "f27411eb6d9c3dada5edd444b8416675"
     },
+    "RcppArmadillo": {
+      "Package": "RcppArmadillo",
+      "Version": "14.0.2-1",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "Rcpp",
+        "methods",
+        "stats",
+        "utils"
+      ],
+      "Hash": "edff747eebfb8f2e18eed194e000caa1"
+    },
     "RefManageR": {
       "Package": "RefManageR",
       "Version": "1.4.0",
@@ -732,6 +746,41 @@
       ],
       "Hash": "15e9634c0fcd294799e9b2e929ed1b86"
     },
+    "geofacet": {
+      "Package": "geofacet",
+      "Version": "0.2.1",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "geogrid",
+        "ggplot2",
+        "ggrepel",
+        "graphics",
+        "gridExtra",
+        "gtable",
+        "imguR",
+        "methods",
+        "rlang",
+        "rnaturalearth",
+        "sp"
+      ],
+      "Hash": "5fe50555f956ffc94f17415732349178"
+    },
+    "geogrid": {
+      "Package": "geogrid",
+      "Version": "0.1.2",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "Rcpp",
+        "RcppArmadillo",
+        "methods",
+        "sf",
+        "sp"
+      ],
+      "Hash": "30ecd3a8ccb22983f115f444ee9e925f"
+    },
     "geojsonsf": {
       "Package": "geojsonsf",
       "Version": "2.0.3",
@@ -1117,6 +1166,19 @@
         "uuid"
       ],
       "Hash": "99df65cfef20e525ed38c3d2577f7190"
+    },
+    "imguR": {
+      "Package": "imguR",
+      "Version": "1.0.3",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "httr",
+        "jpeg",
+        "png",
+        "tools"
+      ],
+      "Hash": "f6deba2c922290384e51a5176dea7ea8"
     },
     "isoband": {
       "Package": "isoband",
@@ -1833,6 +1895,21 @@
       ],
       "Hash": "062470668513dcda416927085ee9bdc7"
     },
+    "rnaturalearth": {
+      "Package": "rnaturalearth",
+      "Version": "1.0.1",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "httr",
+        "jsonlite",
+        "sf",
+        "terra",
+        "utils"
+      ],
+      "Hash": "741166cab0fe76d8a5670d3ee459a2a4"
+    },
     "rprojroot": {
       "Package": "rprojroot",
       "Version": "2.0.4",
@@ -2035,6 +2112,23 @@
       ],
       "Hash": "5f5a7629f956619d519205ec475fe647"
     },
+    "sp": {
+      "Package": "sp",
+      "Version": "2.1-4",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "grDevices",
+        "graphics",
+        "grid",
+        "lattice",
+        "methods",
+        "stats",
+        "utils"
+      ],
+      "Hash": "75940133cca2e339afce15a586f85b11"
+    },
     "stringi": {
       "Package": "stringi",
       "Version": "1.8.4",
@@ -2083,6 +2177,18 @@
         "lifecycle"
       ],
       "Hash": "213b6b8ed5afbf934843e6c3b090d418"
+    },
+    "terra": {
+      "Package": "terra",
+      "Version": "1.7-78",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "Rcpp",
+        "methods"
+      ],
+      "Hash": "8f020def0792119cb98bd8f696dab22d"
     },
     "textshaping": {
       "Package": "textshaping",
