@@ -20,6 +20,11 @@ If you're interested in hiring me or collaborating with me on a project, please 
 
 ## Gallery of Examples
 
+[How household budget allocation has evolved from 2022 to 2024](https://github.com/CozminaSecula/dataviz/tree/main/2024/2024-10-18)
+
+<p align="left">
+  <img src="/2024/2024-10-18/20241018.jpg" width="100%">
+</p>
 
 [EU's Digital Intensity Index (DII) in 2023](https://github.com/CozminaSecula/dataviz/tree/main/2024/2024-07-16)
 
