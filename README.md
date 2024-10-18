@@ -20,6 +20,7 @@ If you're interested in hiring me or collaborating with me on a project, please 
 
 ## Gallery of Examples
 
+
 [EU's Digital Intensity Index (DII) in 2023](https://github.com/CozminaSecula/dataviz/tree/main/2024/2024-07-16)
 
 <p align="left">
