@@ -39,7 +39,7 @@ systemfonts::register_variant(name = "OpenSans-Regular",
 
 # Define colors and fonts ----------------------------------------------------------
 
-bg_col <- "#ffffff"
+bg_col <- "#fcfcfc"
 title_col <- "#222222"
 subtitle_col <- "#71757d"
 
@@ -345,4 +345,4 @@ ggsave(file.path("2024", "2024-10-18", paste0("20241018", ".jpg")),
        width = 8.5,
        height = 9,
        dpi = 400,
-       bg = "#ffffff")
+       bg = bg_col)
