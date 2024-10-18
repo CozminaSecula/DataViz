@@ -172,4 +172,5 @@ dsi |>
 ggsave(file.path("2024", "2024-08-30", paste0("20240830", ".png")),
        width = 13,
        height = 12,
-       dpi = 300)
+       dpi = 300,
+       bg = "#ffffff")
