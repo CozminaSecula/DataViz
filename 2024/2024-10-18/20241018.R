@@ -39,7 +39,7 @@ systemfonts::register_variant(name = "OpenSans-Regular",
 
 # Define colors and fonts ----------------------------------------------------------
 
-bg_col <- "#fcfcfc"
+bg_col <- "#ffffff"
 title_col <- "#222222"
 subtitle_col <- "#71757d"
 
@@ -332,7 +332,7 @@ p <- p +
     size = 3,
     lineheight = 1.2,
     color = "#71757d",
-    hjust = 0.2,
+    hjust = 0.1,
     vjust = 1.03,
     label.color = NA,
     fill = NA) +
