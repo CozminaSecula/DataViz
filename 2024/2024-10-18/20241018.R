@@ -115,7 +115,7 @@ data_plot <- household_expenditure |>
 # Define text -------------------------------------------------------------
 
 title <- paste0("How household budget allocation has evolved from 2022 to 2024")
-subtitle <- paste0("Percentage allocation of household consumption expenditure across different categories.")
+subtitle <- paste0("Percentage distribution of household consumption expenditures in Romania by different categories.")
 caption <- paste0("**Graphic**: Cozmina Secula | **Data**: National Institute of Satatistics<br>*Data is for the 1st semester, 2024")
 
 
