@@ -80,7 +80,7 @@ data_cleaned_2024 <- raw_df_2024 |>
          percent_quarter_2 = (round(as.numeric(percent_quarter_2), 1)))
 
 
-# Compute average values semester I 2024
+# Compute average values, semester 1 2024
 
 expenditure_average <- data_cleaned_2024 |>
   mutate(semester_1_2024_lei = round(((`QUARTER I 2024` + `QUARTER II 2024`) /2), 1))
@@ -116,7 +116,7 @@ data_plot <- household_expenditure |>
 
 title <- paste0("How household consumption budget allocation evolved from 2022 to 2024")
 subtitle <- paste0("Percentage distribution of household consumption expenditures in Romania by different categories.")
-caption <- paste0("**Graphic**: Cozmina Secula | **Data**: National Institute of Satatistics<br>*Data is for the 1st semester, 2024")
+caption <- paste0("**Graphic**: Cozmina Secula | **Data**: National Institute of Statistics<br>*Data is for the 1st semester, 2024")
 
 
 
