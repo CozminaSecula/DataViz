@@ -126,4 +126,5 @@ ggsave(file.path("2024", "2024-10-05", paste0("20241005", ".png")),
        width = 6,
        height = 10,
        units = "in",
-       dpi = 300)
+       dpi = 300,
+       bg = "#fcfcfc")
